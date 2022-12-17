@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 3.125rem;
+    box-shadow: 0 2px 3px 1px #dfdfdf;
+
+    #title {
+        margin-right: 5rem;
+    }
+}
+
+#category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+
+    .category-item {
+        transition: all .3s;
+        cursor: pointer;
+        color: black;
+
+        &:hover {
+            transform: translateY(-1px);
+            text-shadow: 0 2px 4px #ccc;
+        }
+        &:active {
+            transform: translateY(0);
+        }
+    }
+}
+
+#dark-mode-container {
+    width: 6.25rem;
+    height: 3rem;
+    // background-color: red;
+}
